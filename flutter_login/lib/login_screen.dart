@@ -42,13 +42,12 @@ class LoginScreen extends StatelessWidget {
             padding: const EdgeInsets.only(top: 60.0),
             child: Center(
               child: SizedBox(
-                  width: 200,
-                  height: 150,
+                  height: MediaQuery.of(context).size.height * 0.20,
                   child: Image.asset('assets/images/flutter-logo.png')),
             ),
           ),
-          Container(
-            padding: const EdgeInsets.only(top: 50),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.12,
             child: Column(children: const [
               Text(
                 'Hello',
@@ -85,7 +84,10 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           Container(
-              padding: const EdgeInsets.only(top: 15),
+              height: MediaQuery.of(context).size.height * 0.07,
+              padding: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height * 0.01,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -120,7 +122,9 @@ class LoginScreen extends StatelessWidget {
           Container(
             height: 50,
             width: 250,
-            margin: const EdgeInsets.only(top: 80),
+            margin: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.05,
+            ),
             decoration: BoxDecoration(
                 color: Colors.green, borderRadius: BorderRadius.circular(30)),
             child: TextButton(
@@ -135,7 +139,9 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.only(top: 30),
+            padding: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.02,
+            ),
             child: const Text(
               'Register Now',
               textAlign: TextAlign.center,
@@ -143,7 +149,9 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           Container(
-            padding: const EdgeInsets.only(top: 70),
+            padding: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.05,
+            ),
             alignment: Alignment.bottomCenter,
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
