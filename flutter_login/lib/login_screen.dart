@@ -11,7 +11,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Responsive(
-            mobile: buildLoginMain(context),
+            mobile: SingleChildScrollView(child: buildLoginMain(context)),
             tablet: buildLoginMain(context),
             desktop: Row(children: [
               Expanded(
